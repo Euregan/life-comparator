@@ -1,0 +1,1408 @@
+{
+  "sources": [
+    {
+      "label": "Tableaux de l'économie française, Edition 2020 - Salaires dans les entreprises",
+      "organism": "INSEE",
+      "url": "https://www.insee.fr/fr/statistiques/4277680?sommaire=4318291",
+      "date": "2020/02/27"
+    },
+    {
+      "label": "Tableaux de l'économie française, Edition 2018 - Salaires dans les entreprises",
+      "organism": "INSEE",
+      "url": "https://www.insee.fr/fr/statistiques/3303417?sommaire=3353488",
+      "date": "2018/02/27"
+    },
+    {
+      "label": "Tableaux de l'économie française, Edition 2016 - Salaires dans les entreprises",
+      "organism": "INSEE",
+      "url": "https://www.insee.fr/fr/statistiques/1906678?sommaire=1906743",
+      "date": "2016/03/01"
+    }
+  ],
+  "data": [
+    [
+      1950,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 104,
+              "technician": 53,
+              "employee": 40,
+              "worker": 32
+            },
+            "women": {
+              "executive": 55,
+              "technician": 31,
+              "employee": 28,
+              "worker": 22
+            }
+          }
+        }
+      }
+    ],
+    [
+      1951,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 137,
+              "technician": 72,
+              "employee": 47,
+              "worker": 36
+            },
+            "women": {
+              "executive": 57,
+              "technician": 47,
+              "employee": 33,
+              "worker": 25
+            }
+          }
+        }
+      }
+    ],
+    [
+      1952,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 163,
+              "technician": 87,
+              "employee": 56,
+              "worker": 42
+            },
+            "women": {
+              "executive": 75,
+              "technician": 55,
+              "employee": 39,
+              "worker": 28
+            }
+          }
+        }
+      }
+    ],
+    [
+      1953,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 170,
+              "technician": 88,
+              "employee": 56,
+              "worker": 43
+            },
+            "women": {
+              "executive": 78,
+              "technician": 56,
+              "employee": 41,
+              "worker": 29
+            }
+          }
+        }
+      }
+    ],
+    [
+      1954,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 189,
+              "technician": 94,
+              "employee": 57,
+              "worker": 47
+            },
+            "women": {
+              "executive": 96,
+              "technician": 59,
+              "employee": 44,
+              "worker": 32
+            }
+          }
+        }
+      }
+    ],
+    [
+      1955,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 220,
+              "technician": 106,
+              "employee": 62,
+              "worker": 52
+            },
+            "women": {
+              "executive": 107,
+              "technician": 68,
+              "employee": 48,
+              "worker": 35
+            }
+          }
+        }
+      }
+    ],
+    [
+      1956,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 241,
+              "technician": 119,
+              "employee": 68,
+              "worker": 58
+            },
+            "women": {
+              "executive": 117,
+              "technician": 77,
+              "employee": 52,
+              "worker": 39
+            }
+          }
+        }
+      }
+    ],
+    [
+      1957,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 268,
+              "technician": 133,
+              "employee": 74,
+              "worker": 64
+            },
+            "women": {
+              "executive": 147,
+              "technician": 85,
+              "employee": 57,
+              "worker": 41
+            }
+          }
+        }
+      }
+    ],
+    [
+      1958,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 294,
+              "technician": 147,
+              "employee": 83,
+              "worker": 71
+            },
+            "women": {
+              "executive": 158,
+              "technician": 95,
+              "employee": 63,
+              "worker": 45
+            }
+          }
+        }
+      }
+    ],
+    [
+      1959,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 328,
+              "technician": 159,
+              "employee": 90,
+              "worker": 74
+            },
+            "women": {
+              "executive": 178,
+              "technician": 99,
+              "employee": 67,
+              "worker": 48
+            }
+          }
+        }
+      }
+    ],
+    [
+      1960,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 348,
+              "technician": 178,
+              "employee": 97,
+              "worker": 81
+            },
+            "women": {
+              "executive": 194,
+              "technician": 113,
+              "employee": 74,
+              "worker": 53
+            }
+          }
+        }
+      }
+    ],
+    [
+      1961,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 378,
+              "technician": 187,
+              "employee": 104,
+              "worker": 87
+            },
+            "women": {
+              "executive": 215,
+              "technician": 122,
+              "employee": 79,
+              "worker": 57
+            }
+          }
+        }
+      }
+    ],
+    [
+      1962,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 401,
+              "technician": 200,
+              "employee": 115,
+              "worker": 96
+            },
+            "women": {
+              "executive": 237,
+              "technician": 133,
+              "employee": 86,
+              "worker": 63
+            }
+          }
+        }
+      }
+    ],
+    [
+      1963,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 432,
+              "technician": 222,
+              "employee": 124,
+              "worker": 105
+            },
+            "women": {
+              "executive": 261,
+              "technician": 151,
+              "employee": 94,
+              "worker": 69
+            }
+          }
+        }
+      }
+    ],
+    [
+      1964,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 476,
+              "technician": 241,
+              "employee": 133,
+              "worker": 113
+            },
+            "women": {
+              "executive": 301,
+              "technician": 164,
+              "employee": 102,
+              "worker": 72
+            }
+          }
+        }
+      }
+    ],
+    [
+      1965,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 508,
+              "technician": 249,
+              "employee": 141,
+              "worker": 118
+            },
+            "women": {
+              "executive": 319,
+              "technician": 174,
+              "employee": 106,
+              "worker": 76
+            }
+          }
+        }
+      }
+    ],
+    [
+      1966,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 533,
+              "technician": 266,
+              "employee": 149,
+              "worker": 125
+            },
+            "women": {
+              "executive": 329,
+              "technician": 184,
+              "employee": 114,
+              "worker": 81
+            }
+          }
+        }
+      }
+    ],
+    [
+      1967,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 572,
+              "technician": 282,
+              "employee": 157,
+              "worker": 131
+            },
+            "women": {
+              "executive": 371,
+              "technician": 198,
+              "employee": 119,
+              "worker": 85
+            }
+          }
+        }
+      }
+    ],
+    [
+      1968,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 608,
+              "technician": 295,
+              "employee": 171,
+              "worker": 142
+            },
+            "women": {
+              "executive": 396,
+              "technician": 219,
+              "employee": 132,
+              "worker": 95
+            }
+          }
+        }
+      }
+    ],
+    [
+      1969,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 650,
+              "technician": 330,
+              "employee": 189,
+              "worker": 159
+            },
+            "women": {
+              "executive": 417,
+              "technician": 240,
+              "employee": 145,
+              "worker": 108
+            }
+          }
+        }
+      }
+    ],
+    [
+      1970,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 716,
+              "technician": 361,
+              "employee": 205,
+              "worker": 174
+            },
+            "women": {
+              "executive": 463,
+              "technician": 260,
+              "employee": 159,
+              "worker": 118
+            }
+          }
+        }
+      }
+    ],
+    [
+      1971,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 790,
+              "technician": 390,
+              "employee": 228,
+              "worker": 192
+            },
+            "women": {
+              "executive": 513,
+              "technician": 280,
+              "employee": 175,
+              "worker": 131
+            }
+          }
+        }
+      }
+    ],
+    [
+      1972,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 864,
+              "technician": 429,
+              "employee": 248,
+              "worker": 214
+            },
+            "women": {
+              "executive": 548,
+              "technician": 301,
+              "employee": 192,
+              "worker": 148
+            }
+          }
+        }
+      }
+    ],
+    [
+      1973,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 939,
+              "technician": 471,
+              "employee": 284,
+              "worker": 241
+            },
+            "women": {
+              "executive": 592,
+              "technician": 323,
+              "employee": 217,
+              "worker": 167
+            }
+          }
+        }
+      }
+    ],
+    [
+      1974,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 1083,
+              "technician": 538,
+              "employee": 322,
+              "worker": 283
+            },
+            "women": {
+              "executive": 683,
+              "technician": 396,
+              "employee": 253,
+              "worker": 196
+            }
+          }
+        }
+      }
+    ],
+    [
+      1975,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 1173,
+              "technician": 593,
+              "employee": 369,
+              "worker": 321
+            },
+            "women": {
+              "executive": 751,
+              "technician": 442,
+              "employee": 290,
+              "worker": 226
+            }
+          }
+        }
+      }
+    ],
+    [
+      1976,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 1319,
+              "technician": 666,
+              "employee": 431,
+              "worker": 372
+            },
+            "women": {
+              "executive": 838,
+              "technician": 500,
+              "employee": 335,
+              "worker": 263
+            }
+          }
+        }
+      }
+    ],
+    [
+      1977,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 1413,
+              "technician": 726,
+              "employee": 474,
+              "worker": 410
+            },
+            "women": {
+              "executive": 925,
+              "technician": 549,
+              "employee": 370,
+              "worker": 294
+            }
+          }
+        }
+      }
+    ],
+    [
+      1978,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 1517,
+              "technician": 801,
+              "employee": 528,
+              "worker": 463
+            },
+            "women": {
+              "executive": 1017,
+              "technician": 620,
+              "employee": 415,
+              "worker": 336
+            }
+          }
+        }
+      }
+    ],
+    [
+      1979,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 1636,
+              "technician": 866,
+              "employee": 566,
+              "worker": 498
+            },
+            "women": {
+              "executive": 1098,
+              "technician": 680,
+              "employee": 454,
+              "worker": 368
+            }
+          }
+        }
+      }
+    ],
+    [
+      1980,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 1810,
+              "technician": 964,
+              "employee": 647,
+              "worker": 567
+            },
+            "women": {
+              "executive": 1210,
+              "technician": 760,
+              "employee": 515,
+              "worker": 421
+            }
+          }
+        }
+      }
+    ],
+    [
+      1981,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 1996,
+              "technician": 1075,
+              "employee": 724,
+              "worker": 641
+            },
+            "women": {
+              "executive": 1335,
+              "technician": 850,
+              "employee": 583,
+              "worker": 479
+            }
+          }
+        }
+      }
+    ],
+    [
+      1982,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 2211,
+              "technician": 1204,
+              "employee": 814,
+              "worker": 727
+            },
+            "women": {
+              "executive": 1479,
+              "technician": 955,
+              "employee": 664,
+              "worker": 548
+            }
+          }
+        }
+      }
+    ],
+    [
+      1984,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 2373,
+              "technician": 1393,
+              "employee": 979,
+              "worker": 839
+            },
+            "women": {
+              "executive": 1591,
+              "technician": 1100,
+              "employee": 787,
+              "worker": 646
+            }
+          }
+        }
+      }
+    ],
+    [
+      1985,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 2480,
+              "technician": 1476,
+              "employee": 1020,
+              "worker": 901
+            },
+            "women": {
+              "executive": 1640,
+              "technician": 1160,
+              "employee": 834,
+              "worker": 697
+            }
+          }
+        }
+      }
+    ],
+    [
+      1986,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 2587,
+              "technician": 1532,
+              "employee": 1086,
+              "worker": 943
+            },
+            "women": {
+              "executive": 1707,
+              "technician": 1202,
+              "employee": 878,
+              "worker": 730
+            }
+          }
+        }
+      }
+    ],
+    [
+      1987,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 2735,
+              "technician": 1536,
+              "employee": 1045,
+              "worker": 956
+            },
+            "women": {
+              "executive": 1913,
+              "technician": 1218,
+              "employee": 888,
+              "worker": 739
+            }
+          }
+        }
+      }
+    ],
+    [
+      1988,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 2808,
+              "technician": 1559,
+              "employee": 1065,
+              "worker": 979
+            },
+            "women": {
+              "executive": 1980,
+              "technician": 1246,
+              "employee": 908,
+              "worker": 754
+            }
+          }
+        }
+      }
+    ],
+    [
+      1989,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 2907,
+              "technician": 1613,
+              "employee": 1099,
+              "worker": 1013
+            },
+            "women": {
+              "executive": 2066,
+              "technician": 1312,
+              "employee": 941,
+              "worker": 776
+            }
+          }
+        }
+      }
+    ],
+    [
+      1990,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 3024,
+              "technician": 1674,
+              "employee": 1137,
+              "worker": 1063
+            },
+            "women": {
+              "executive": 2175,
+              "technician": 1372,
+              "employee": 988,
+              "worker": 811
+            }
+          }
+        }
+      }
+    ],
+    [
+      1991,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 3100,
+              "technician": 1713,
+              "employee": 1160,
+              "worker": 1098
+            },
+            "women": {
+              "executive": 2253,
+              "technician": 1413,
+              "employee": 1021,
+              "worker": 835
+            }
+          }
+        }
+      }
+    ],
+    [
+      1992,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 3121,
+              "technician": 1693,
+              "employee": 1147,
+              "worker": 1119
+            },
+            "women": {
+              "executive": 2302,
+              "technician": 1450,
+              "employee": 1038,
+              "worker": 857
+            }
+          }
+        }
+      }
+    ],
+    [
+      1993,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 2989,
+              "technician": 1761,
+              "employee": 1282,
+              "worker": 1162
+            },
+            "women": {
+              "executive": 2237,
+              "technician": 1668,
+              "employee": 1159,
+              "worker": 907
+            }
+          }
+        }
+      }
+    ],
+    [
+      1994,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 3102,
+              "technician": 1769,
+              "employee": 1249,
+              "worker": 1138
+            },
+            "women": {
+              "executive": 2323,
+              "technician": 1491,
+              "employee": 1076,
+              "worker": 883
+            }
+          }
+        }
+      }
+    ],
+    [
+      1995,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 3179,
+              "technician": 1805,
+              "employee": 1269,
+              "worker": 1183
+            },
+            "women": {
+              "executive": 2437,
+              "technician": 1550,
+              "employee": 1137,
+              "worker": 979
+            }
+          }
+        }
+      }
+    ],
+    [
+      1996,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 3227,
+              "technician": 1835,
+              "employee": 1283,
+              "worker": 1202
+            },
+            "women": {
+              "executive": 2454,
+              "technician": 1558,
+              "employee": 1144,
+              "worker": 974
+            }
+          }
+        }
+      }
+    ],
+    [
+      1997,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 3282,
+              "technician": 1857,
+              "employee": 1301,
+              "worker": 1230
+            },
+            "women": {
+              "executive": 2511,
+              "technician": 1587,
+              "employee": 1169,
+              "worker": 998
+            }
+          }
+        }
+      }
+    ],
+    [
+      1998,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 3308,
+              "technician": 1870,
+              "employee": 1328,
+              "worker": 1246
+            },
+            "women": {
+              "executive": 2540,
+              "technician": 1601,
+              "employee": 1188,
+              "worker": 1015
+            }
+          }
+        }
+      }
+    ],
+    [
+      1999,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 3392,
+              "technician": 1889,
+              "employee": 1331,
+              "worker": 1262
+            },
+            "women": {
+              "executive": 2610,
+              "technician": 1618,
+              "employee": 1200,
+              "worker": 1029
+            }
+          }
+        }
+      }
+    ],
+    [
+      2000,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 3488,
+              "technician": 1922,
+              "employee": 1341,
+              "worker": 1287
+            },
+            "women": {
+              "executive": 2689,
+              "technician": 1647,
+              "employee": 1218,
+              "worker": 1052
+            }
+          }
+        }
+      }
+    ],
+    [
+      2001,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 3599,
+              "technician": 1887,
+              "employee": 1300,
+              "worker": 1294
+            },
+            "women": {
+              "executive": 2810,
+              "technician": 1649,
+              "employee": 1213,
+              "worker": 1072
+            }
+          }
+        }
+      }
+    ],
+    [
+      2002,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 3667,
+              "technician": 1926,
+              "employee": 1329,
+              "worker": 1328
+            },
+            "women": {
+              "executive": 2882,
+              "technician": 1686,
+              "employee": 1236,
+              "worker": 1096
+            }
+          }
+        }
+      }
+    ],
+    [
+      2003,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 3709,
+              "technician": 1963,
+              "employee": 1348,
+              "worker": 1362
+            },
+            "women": {
+              "executive": 2921,
+              "technician": 1720,
+              "employee": 1253,
+              "worker": 1120
+            }
+          }
+        }
+      }
+    ],
+    [
+      2004,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 3783,
+              "technician": 1998,
+              "employee": 1364,
+              "worker": 1395
+            },
+            "women": {
+              "executive": 2970,
+              "technician": 1746,
+              "employee": 1275,
+              "worker": 1161
+            }
+          }
+        }
+      }
+    ],
+    [
+      2005,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 3899,
+              "technician": 2047,
+              "employee": 1404,
+              "worker": 1441
+            },
+            "women": {
+              "executive": 3079,
+              "technician": 1798,
+              "employee": 1316,
+              "worker": 1204
+            }
+          }
+        }
+      }
+    ],
+    [
+      2006,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 3983,
+              "technician": 2089,
+              "employee": 1422,
+              "worker": 1456
+            },
+            "women": {
+              "executive": 3134,
+              "technician": 1832,
+              "employee": 1341,
+              "worker": 1208
+            }
+          }
+        }
+      }
+    ],
+    [
+      2007,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 4116,
+              "technician": 2146,
+              "employee": 1457,
+              "worker": 1501
+            },
+            "women": {
+              "executive": 3242,
+              "technician": 1877,
+              "employee": 1374,
+              "worker": 1240
+            }
+          }
+        }
+      }
+    ],
+    [
+      2008,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 4185,
+              "technician": 2208,
+              "employee": 1503,
+              "worker": 1562
+            },
+            "women": {
+              "executive": 3309,
+              "technician": 1923,
+              "employee": 1415,
+              "worker": 1286
+            }
+          }
+        }
+      }
+    ],
+    [
+      2009,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 4084,
+              "technician": 2263,
+              "employee": 1615,
+              "worker": 1601
+            },
+            "women": {
+              "executive": 3199,
+              "technician": 1935,
+              "employee": 1482,
+              "worker": 1329
+            }
+          }
+        }
+      }
+    ],
+    [
+      2010,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 4168,
+              "technician": 2291,
+              "employee": 1632,
+              "worker": 1624
+            },
+            "women": {
+              "executive": 3333,
+              "technician": 1990,
+              "employee": 1508,
+              "worker": 1361
+            }
+          }
+        }
+      }
+    ],
+    [
+      2011,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 4233,
+              "technician": 2337,
+              "employee": 1693,
+              "worker": 1701
+            },
+            "women": {
+              "executive": 3371,
+              "technician": 2023,
+              "employee": 1552,
+              "worker": 1432
+            }
+          }
+        }
+      }
+    ],
+    [
+      2012,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 4278,
+              "technician": 2355,
+              "employee": 1712,
+              "worker": 1724
+            },
+            "women": {
+              "executive": 3423,
+              "technician": 2039,
+              "employee": 1571,
+              "worker": 1463
+            }
+          }
+        }
+      }
+    ],
+    [
+      2015,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 4451,
+              "technician": 2420,
+              "employee": 1739,
+              "worker": 1765
+            },
+            "women": {
+              "executive": 3561,
+              "technician": 2081,
+              "employee": 1591,
+              "worker": 1483
+            }
+          }
+        },
+        "bySector": {
+          "unisex": {
+            "Ind. extractives, énergie, eau, gestion des déchets et dépollution": 2770,
+            "Fab. de denrées alimentaires, de boissons et de produits à base de tabac": 1965,
+            "Cokéfaction et raffinage": 3607,
+            "Fab. d'équip. élect., électroniques, informatiques et fabrication de machines": 2763,
+            "Fabrication de matériels de transport": 2925,
+            "Fabrication d'autres produits industriels": 2343,
+            "Construction": 2039,
+            "Commerce et réparation": 2035,
+            "Transports et entreposage": 2202,
+            "Hébergement et restauration": 1613,
+            "Information et communication": 3174,
+            "Activités financières et d'assurance": 3342,
+            "Activités immobilières": 2276,
+            "Activités scientifiques et techniques, services adm. et de soutien": 2235,
+            "Adm. publique, enseignement, santé humaine et action sociale": 1790,
+            "Autres activités de services": 1935
+          }
+        }
+      }
+    ],
+    [
+      2016,
+      {
+        "bySpc": {
+          "menWomen": {
+            "men": {
+              "executive": 4377,
+              "technician": 2396,
+              "employee": 1681,
+              "worker": 1731
+            },
+            "women": {
+              "executive": 3477,
+              "technician": 2055,
+              "employee": 1549,
+              "worker": 1441
+            }
+          }
+        },
+        "bySector": {
+          "unisex": {
+            "Ind. extractives, énergie, eau, gestion des déchets et dépollution": 2806,
+            "Fab. de denrées alimentaires, de boissons et de produits à base de tabac": 1971,
+            "Cokéfaction et raffinage": 3851,
+            "Fab. d'équip. élect., électroniques, informatiques et fabrication de machines": 2799,
+            "Fabrication de matériels de transport": 2993,
+            "Fabrication d'autres produits industriels": 2376,
+            "Construction": 2047,
+            "Commerce et réparation": 2042,
+            "Transports et entreposage": 2199,
+            "Hébergement et restauration": 1585,
+            "Information et communication": 3219,
+            "Activités financières et d'assurance": 3355,
+            "Activités immobilières": 2311,
+            "Activités scientifiques et techniques, services adm. et de soutien": 2296,
+            "Adm. publique, enseignement, santé humaine et action sociale": 1766,
+            "Autres activités de services": 1902
+          }
+        }
+      }
+    ]
+  ]
+}
