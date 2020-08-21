@@ -9,7 +9,7 @@ withoutKind : DisplayOptions.SalaryDisplay -> Salary -> Html msg
 withoutKind option salary =
     case ( option, salary ) of
         ( DisplayOptions.NetMonthly, NetMonthly amount ) ->
-            text <| String.fromFloat amount ++ "€"
+            text <| String.fromInt (round amount) ++ "€"
 
         ( DisplayOptions.NetMonthly, GrossMonthly amount ) ->
             text <| String.fromInt (round <| amount * 0.65) ++ "€"
@@ -21,7 +21,7 @@ withoutKind option salary =
             text <| String.fromInt (round <| amount * 0.65 / 12) ++ "€"
 
         ( DisplayOptions.GrossMonthly, GrossMonthly amount ) ->
-            text <| String.fromFloat amount ++ "€"
+            text <| String.fromInt (round amount) ++ "€"
 
         ( DisplayOptions.GrossMonthly, NetMonthly amount ) ->
             text <| String.fromInt (round <| amount * 1.35) ++ "€"
@@ -33,7 +33,7 @@ withoutKind option salary =
             text <| String.fromInt (round <| amount / 12) ++ "€"
 
         ( DisplayOptions.NetYearly, NetYearly amount ) ->
-            text <| String.fromFloat amount ++ "€"
+            text <| String.fromInt (round amount) ++ "€"
 
         ( DisplayOptions.NetYearly, NetMonthly amount ) ->
             text <| String.fromInt (round <| amount * 12) ++ "€"
@@ -45,7 +45,7 @@ withoutKind option salary =
             text <| String.fromInt (round <| amount * 0.65) ++ "€"
 
         ( DisplayOptions.GrossYearly, GrossYearly amount ) ->
-            text <| String.fromFloat amount ++ "€"
+            text <| String.fromInt (round amount) ++ "€"
 
         ( DisplayOptions.GrossYearly, NetMonthly amount ) ->
             text <| String.fromInt (round <| amount * 1.35 * 12) ++ "€"

@@ -22,3 +22,19 @@ raw salary =
 
         GrossYearly amount ->
             amount * 0.65 / 12
+
+
+map : (Float -> Float) -> Salary -> Salary
+map func salary =
+    case salary of
+        NetMonthly amount ->
+            NetMonthly <| func amount
+
+        GrossMonthly amount ->
+            GrossMonthly <| func amount
+
+        NetYearly amount ->
+            NetYearly <| func amount
+
+        GrossYearly amount ->
+            GrossYearly <| func amount
