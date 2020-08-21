@@ -28,22 +28,27 @@ padding =
     60
 
 
-maxY : List ( Int, Maybe Float ) -> Float
-maxY =
-    List.foldl
-        (\( _, maybeValue ) acc ->
-            case maybeValue of
-                Nothing ->
-                    acc
+maxY : List (List ( Int, Maybe Float )) -> Float
+maxY model =
+    Maybe.withDefault 0 <|
+        List.maximum <|
+            List.map
+                (List.foldl
+                    (\( _, maybeValue ) acc ->
+                        case maybeValue of
+                            Nothing ->
+                                acc
 
-                Just value ->
-                    if value > acc then
-                        value
+                            Just value ->
+                                if value > acc then
+                                    value
 
-                    else
-                        acc
-        )
-        0
+                                else
+                                    acc
+                    )
+                    0
+                )
+                model
 
 
 xScale : ContinuousScale Float
@@ -56,7 +61,7 @@ yScale max =
     Scale.linear ( h - 2 * padding, 0 ) ( 0, max )
 
 
-xAxis : List ( Int, Maybe Float ) -> Svg msg
+xAxis : List (List ( Int, Maybe Float )) -> Svg msg
 xAxis model =
     Axis.bottom [ Axis.tickCount 20 ] xScale
 
@@ -71,20 +76,19 @@ transformToLineData max ( x, maybeY ) =
     Maybe.map (\y -> ( Scale.convert xScale (toFloat x), Scale.convert (yScale max) y )) maybeY
 
 
-line : List ( Int, Maybe Float ) -> Path
-line model =
-    List.map (transformToLineData <| maxY model) model
+line : Float -> List ( Int, Maybe Float ) -> Path
+line max model =
+    List.map (transformToLineData max) model
         |> Shape.line Shape.monotoneInXCurve
 
 
-chart : List ( Int, Maybe Float ) -> Svg msg
+chart : List (List ( Int, Maybe Float )) -> Svg msg
 chart model =
     svg [ viewBox 0 0 w h ]
         [ g [ transform [ Translate (padding - 1) (h - padding) ] ]
             [ xAxis model ]
         , g [ transform [ Translate (padding - 1) padding ] ]
             [ yAxis (maxY model) ]
-        , g [ transform [ Translate padding padding ], class [ "series" ] ]
-            [ Path.element (line model) [ stroke <| Paint <| Color.rgb 1 0 0, strokeWidth 3, fill PaintNone ]
-            ]
+        , g [ transform [ Translate padding padding ], class [ "series" ] ] <|
+            List.map (\datapoints -> Path.element (line (maxY model) datapoints) [ stroke <| Paint <| Color.rgb 1 0 0, strokeWidth 3, fill PaintNone ]) model
         ]

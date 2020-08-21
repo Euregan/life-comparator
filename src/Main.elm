@@ -155,10 +155,39 @@ view model =
                 , DisplayOptions.card model.displayOptions SalaryDisplayChanged
                 ]
             , Graph.chart <|
-                Chronology.toList <|
+                [ Chronology.toList <|
+                    Chronology.map
+                        (\_ maybeSalaries -> Maybe.map (\{ women } -> Salary.raw women.worker) maybeSalaries)
+                        salariesWithInflation
+                , Chronology.toList <|
+                    Chronology.map
+                        (\_ maybeSalaries -> Maybe.map (\{ men } -> Salary.raw men.worker) maybeSalaries)
+                        salariesWithInflation
+                , Chronology.toList <|
+                    Chronology.map
+                        (\_ maybeSalaries -> Maybe.map (\{ women } -> Salary.raw women.employee) maybeSalaries)
+                        salariesWithInflation
+                , Chronology.toList <|
+                    Chronology.map
+                        (\_ maybeSalaries -> Maybe.map (\{ men } -> Salary.raw men.employee) maybeSalaries)
+                        salariesWithInflation
+                , Chronology.toList <|
+                    Chronology.map
+                        (\_ maybeSalaries -> Maybe.map (\{ women } -> Salary.raw women.technician) maybeSalaries)
+                        salariesWithInflation
+                , Chronology.toList <|
+                    Chronology.map
+                        (\_ maybeSalaries -> Maybe.map (\{ men } -> Salary.raw men.technician) maybeSalaries)
+                        salariesWithInflation
+                , Chronology.toList <|
                     Chronology.map
                         (\_ maybeSalaries -> Maybe.map (\{ women } -> Salary.raw women.executive) maybeSalaries)
                         salariesWithInflation
+                , Chronology.toList <|
+                    Chronology.map
+                        (\_ maybeSalaries -> Maybe.map (\{ men } -> Salary.raw men.executive) maybeSalaries)
+                        salariesWithInflation
+                ]
             , table []
                 [ thead []
                     [ tr []
