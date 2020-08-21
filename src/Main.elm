@@ -2,6 +2,7 @@ module Main exposing (main)
 
 import Browser
 import Component.DisplayOptions as DisplayOptions
+import Component.Graph as Graph
 import Component.Layout as Layout
 import Component.Salary as Salary
 import Component.User as User
@@ -126,6 +127,25 @@ update msg model =
 
 view : Model -> Browser.Document Msg
 view model =
+    let
+        salariesWithInflation =
+            Chronology.merge
+                (Maybe.map2
+                    (\menWomenSalaries inflation ->
+                        MenWomen.map
+                            (SocioProfessionalCategories.map
+                                (Salary.map
+                                    (\salary ->
+                                        salary * inflation
+                                    )
+                                )
+                            )
+                            menWomenSalaries
+                    )
+                )
+                model.salaries
+                model.inflation
+    in
     { title = ""
     , body =
         [ main_ []
@@ -134,6 +154,11 @@ view model =
                 [ User.card UserSalaryChanged model.user
                 , DisplayOptions.card model.displayOptions SalaryDisplayChanged
                 ]
+            , Graph.chart <|
+                Chronology.toList <|
+                    Chronology.map
+                        (\_ maybeSalaries -> Maybe.map (\{ women } -> Salary.raw women.executive) maybeSalaries)
+                        salariesWithInflation
             , table []
                 [ thead []
                     [ tr []
@@ -171,22 +196,7 @@ view model =
                     <|
                         List.reverse <|
                             Chronology.toList <|
-                                Chronology.merge
-                                    (Maybe.map2
-                                        (\menWomenSalaries inflation ->
-                                            MenWomen.map
-                                                (SocioProfessionalCategories.map
-                                                    (Salary.map
-                                                        (\salary ->
-                                                            salary * inflation
-                                                        )
-                                                    )
-                                                )
-                                                menWomenSalaries
-                                        )
-                                    )
-                                    model.salaries
-                                    model.inflation
+                                salariesWithInflation
                 ]
             ]
         ]
