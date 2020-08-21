@@ -1,5 +1,6 @@
 module Component.User exposing (card)
 
+import Component.Card as Card
 import Data.Gender exposing (Gender(..))
 import Data.Salary as Salary
 import Data.User exposing (User)
@@ -11,7 +12,7 @@ import Parser
 
 card : (Maybe Float -> msg) -> User -> Html msg
 card userSalaryChanged user =
-    div []
+    Card.card (text "Vous")
         [ label [ for "salary" ] [ text "Salaire" ]
         , input
             [ id "salary"

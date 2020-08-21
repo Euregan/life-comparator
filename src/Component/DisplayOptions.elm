@@ -1,5 +1,6 @@
 module Component.DisplayOptions exposing (..)
 
+import Component.Card as Card
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (..)
@@ -37,7 +38,7 @@ card options onSalaryDisplayChange =
                 _ ->
                     NetMonthly
     in
-    div []
+    Card.card (text "Options d'affichage")
         [ label [ for "salary-display" ] [ text "Salaire" ]
         , select [ id "salary-display", onInput (\raw -> onSalaryDisplayChange (salaryDisplayStringToType raw)) ]
             [ option [ selected <| options.salary == NetMonthly, value "NetMonthly" ] [ text "Mensuel net" ]

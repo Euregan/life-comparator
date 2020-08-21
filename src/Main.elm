@@ -2,6 +2,7 @@ module Main exposing (main)
 
 import Browser
 import Component.DisplayOptions as DisplayOptions
+import Component.Layout as Layout
 import Component.Salary as Salary
 import Component.User as User
 import Data.Chronology exposing (Chronology)
@@ -121,44 +122,50 @@ view : Model -> Browser.Document Msg
 view model =
     { title = ""
     , body =
-        [ User.card UserSalaryChanged model.user
-        , DisplayOptions.card model.displayOptions SalaryDisplayChanged
-        , table []
-            [ thead []
-                [ tr []
-                    [ td [] []
-                    , td [ colspan 4 ] [ text "Femmes" ]
-                    , td [ colspan 4 ] [ text "Hommes" ]
-                    ]
-                , tr []
-                    [ td [] []
-                    , td [] [ text "Cadre" ]
-                    , td [] [ text "Profession intermédiaire" ]
-                    , td [] [ text "Employé" ]
-                    , td [] [ text "Ouvrier" ]
-                    , td [] [ text "Cadre" ]
-                    , td [] [ text "Profession intermédiaire" ]
-                    , td [] [ text "Employé" ]
-                    , td [] [ text "Ouvrier" ]
-                    ]
+        [ main_ []
+            [ h1 [] [ text "Life comparator" ]
+            , Layout.columns
+                [ User.card UserSalaryChanged model.user
+                , DisplayOptions.card model.displayOptions SalaryDisplayChanged
                 ]
-            , tbody [] <|
-                List.map
-                    (\( year, data ) ->
-                        tr []
-                            [ td [] [ text <| String.fromInt year ]
-                            , td [] [ Salary.withoutKind model.displayOptions.salary data.women.executive ]
-                            , td [] [ Salary.withoutKind model.displayOptions.salary data.women.technician ]
-                            , td [] [ Salary.withoutKind model.displayOptions.salary data.women.employee ]
-                            , td [] [ Salary.withoutKind model.displayOptions.salary data.women.worker ]
-                            , td [] [ Salary.withoutKind model.displayOptions.salary data.men.executive ]
-                            , td [] [ Salary.withoutKind model.displayOptions.salary data.men.technician ]
-                            , td [] [ Salary.withoutKind model.displayOptions.salary data.men.employee ]
-                            , td [] [ Salary.withoutKind model.displayOptions.salary data.men.worker ]
-                            ]
-                    )
-                <|
-                    Dict.toList model.salaries
+            , table []
+                [ thead []
+                    [ tr []
+                        [ td [] []
+                        , td [ colspan 4, class "center" ] [ text "Femmes" ]
+                        , td [ colspan 4, class "center" ] [ text "Hommes" ]
+                        ]
+                    , tr []
+                        [ td [] []
+                        , td [] [ text "Cadre" ]
+                        , td [] [ text "Profession intermédiaire" ]
+                        , td [] [ text "Employé" ]
+                        , td [] [ text "Ouvrier" ]
+                        , td [] [ text "Cadre" ]
+                        , td [] [ text "Profession intermédiaire" ]
+                        , td [] [ text "Employé" ]
+                        , td [] [ text "Ouvrier" ]
+                        ]
+                    ]
+                , tbody [] <|
+                    List.map
+                        (\( year, data ) ->
+                            tr []
+                                [ td [ class "year" ] [ text <| String.fromInt year ]
+                                , td [] [ Salary.withoutKind model.displayOptions.salary data.women.executive ]
+                                , td [] [ Salary.withoutKind model.displayOptions.salary data.women.technician ]
+                                , td [] [ Salary.withoutKind model.displayOptions.salary data.women.employee ]
+                                , td [] [ Salary.withoutKind model.displayOptions.salary data.women.worker ]
+                                , td [] [ Salary.withoutKind model.displayOptions.salary data.men.executive ]
+                                , td [] [ Salary.withoutKind model.displayOptions.salary data.men.technician ]
+                                , td [] [ Salary.withoutKind model.displayOptions.salary data.men.employee ]
+                                , td [] [ Salary.withoutKind model.displayOptions.salary data.men.worker ]
+                                ]
+                        )
+                    <|
+                        List.reverse <|
+                            Dict.toList model.salaries
+                ]
             ]
         ]
     }

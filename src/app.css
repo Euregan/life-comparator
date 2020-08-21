@@ -1,0 +1,91 @@
+* {
+  font-family: sans-serif;
+
+  --padding: 1rem;
+  --layout-margin: 1rem;
+  --element-margin: 0.5rem;
+  --table-hover-color: #f4f5f5;
+  --main-color: #2f9cc8;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > * ~ * {
+  margin-top: var(--layout-margin);
+}
+
+h1 {
+  color: var(--main-color);
+}
+
+.center {
+  text-align: center;
+}
+
+thead tr:first-child {
+  background-color: white;
+}
+
+table .year,
+thead {
+  color: #777;
+}
+
+td {
+  padding: var(--padding);
+  width: 6rem;
+}
+
+/* LAYOUTS */
+
+.columns {
+  display: flex;
+}
+
+.columns > * ~ * {
+  margin-left: var(--layout-margin);
+}
+
+/* CARDS */
+
+.card > .header {
+  font-weight: bold;
+  margin-bottom: var(--element-margin);
+}
+
+.card > .body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* HOVER */
+
+thead tr:first-child td:hover {
+  background-color: var(--table-hover-color);
+}
+tbody tr:hover {
+  background-color: var(--table-hover-color);
+}
+table {
+  overflow: hidden;
+  border-collapse: collapse;
+}
+td,
+th {
+  position: relative;
+}
+td:not(.year):hover::after,
+th:not(.year):hover::after {
+  content: '';
+  position: absolute;
+  background-color: var(--table-hover-color);
+  left: 0;
+  top: -5000px;
+  height: 10000px;
+  width: 100%;
+  z-index: -1;
+}
