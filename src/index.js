@@ -5,11 +5,10 @@ import inflation from '../data/inflation.json'
 
 import './app.css'
 
-export default (node) =>
-  Elm.Main.init({
-    node: node,
-    flags: {
-      salaries: salaries,
-      inflation: inflation
-    }
-  })
+Elm.Main.init({
+  node: document.getElementById('app'),
+  flags: {
+    salaries: salaries,
+    inflation: inflation
+  }
+})

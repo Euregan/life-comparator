@@ -3,11 +3,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = (env, { mode } = {}) => ({
   entry: {
-    app: mode === 'development' ? './src/dev.js' : './src/index.js'
+    app: './src/index.js'
   },
   output: {
-    path: mode === 'development' ? path.resolve(__dirname, 'dev') : path.resolve(__dirname, 'dist'),
-    publicPath: mode === 'development' ? path.resolve(__dirname, 'dev') : path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: path.resolve(__dirname, 'dist'),
     filename: '[name].js'
   },
   plugins: [new MiniCssExtractPlugin()],
@@ -49,7 +49,7 @@ module.exports = (env, { mode } = {}) => ({
     ]
   },
   devServer: {
-    contentBase: mode === 'development' ? path.resolve(__dirname, 'dev') : path.resolve(__dirname, 'dist'),
+    contentBase: path.resolve(__dirname, 'dist'),
     writeToDisk: true
   }
 })
