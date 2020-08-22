@@ -36,6 +36,15 @@ thead {
   color: var(--dimmed-text);
 }
 
+th {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+
 td {
   padding: var(--padding);
   width: 6rem;
@@ -83,12 +92,10 @@ table {
   overflow: hidden;
   border-collapse: collapse;
 }
-td,
-th {
+td {
   position: relative;
 }
-td:not(.year):hover::after,
-th:not(.year):hover::after {
+td:not(.year):hover::after {
   content: '';
   position: absolute;
   background-color: var(--table-hover-color);
