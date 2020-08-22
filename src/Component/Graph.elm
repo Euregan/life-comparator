@@ -96,6 +96,6 @@ chart title model =
             , g [ transform [ Translate (padding - 1) 0 ] ]
                 [ yAxis (maxY model) ]
             , g [ transform [ Translate padding 0 ] ] <|
-                List.map (\( datapoints, color ) -> Path.element (line (maxY model) datapoints) [ stroke <| Paint color, strokeWidth 3, fill PaintNone ]) model
+                List.map (\( datapoints, color ) -> Path.element (line (maxY model) datapoints) [ stroke <| Paint color, strokeWidth 4, fill PaintNone ]) model
             ]
         ]
