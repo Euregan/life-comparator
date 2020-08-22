@@ -91,11 +91,11 @@ chart title model =
     div [ Html.Attributes.class "graph" ]
         [ div [ Html.Attributes.class "title" ] [ text title ]
         , svg [ viewBox 0 0 w h ]
-            [ g [ transform [ Translate (padding - 1) (h - padding) ] ]
+            [ g [ transform [ Translate padding 0 ] ] <|
+                List.map (\( datapoints, color ) -> Path.element (line (maxY model) datapoints) [ stroke <| Paint color, strokeWidth 4, fill PaintNone ]) model
+            , g [ transform [ Translate (padding - 1) (h - padding) ] ]
                 [ xAxis ]
             , g [ transform [ Translate (padding - 1) 0 ] ]
                 [ yAxis (maxY model) ]
-            , g [ transform [ Translate padding 0 ] ] <|
-                List.map (\( datapoints, color ) -> Path.element (line (maxY model) datapoints) [ stroke <| Paint color, strokeWidth 4, fill PaintNone ]) model
             ]
         ]
