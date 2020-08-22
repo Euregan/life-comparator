@@ -152,17 +152,14 @@ view model =
 
         rawSalariesWithInflation =
             Chronology.map
-                (\_ maybeSalaries -> Maybe.map (MenWomen.map (SocioProfessionalCategories.map Salary.raw)) maybeSalaries)
+                (\_ maybeSalaries -> Maybe.map (MenWomen.map (SocioProfessionalCategories.map (Salary.raw model.displayOptions.salary))) maybeSalaries)
                 salariesWithInflation
     in
     { title = ""
     , body =
         [ main_ []
             [ h1 [] [ text "Life comparator" ]
-            , Layout.columns
-                [ User.card UserSalaryChanged model.user
-                , DisplayOptions.card model.displayOptions SalaryDisplayChanged
-                ]
+            , DisplayOptions.card model.displayOptions SalaryDisplayChanged
             , Layout.columns
                 [ Graph.chart "Femmes"
                     [ ( Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ women } -> women.worker) salaries) rawSalariesWithInflation, Color.rgb 0.99 0.52 0.54 )

@@ -1,6 +1,7 @@
 module Component.User exposing (card)
 
 import Component.Card as Card
+import Component.DisplayOptions as DisplayOptions
 import Data.Gender exposing (Gender(..))
 import Data.Salary as Salary
 import Data.User exposing (User)
@@ -10,8 +11,8 @@ import Html.Events exposing (..)
 import Parser
 
 
-card : (Maybe Float -> msg) -> User -> Html msg
-card userSalaryChanged user =
+card : DisplayOptions.Options -> (Maybe Float -> msg) -> User -> Html msg
+card options userSalaryChanged user =
     Card.card (text "Vous")
         [ label [ for "salary" ] [ text "Salaire" ]
         , input
@@ -20,7 +21,7 @@ card userSalaryChanged user =
             , value <|
                 Maybe.withDefault "" <|
                     Maybe.map String.fromFloat <|
-                        Maybe.map Salary.raw user.salary
+                        Maybe.map (Salary.raw options.salary) user.salary
             , onInput
                 (\raw ->
                     raw

@@ -1,5 +1,7 @@
 module Data.Salary exposing (..)
 
+import Component.DisplayOptions as DisplayOptions
+
 
 type Salary
     = NetMonthly Float
@@ -8,20 +10,56 @@ type Salary
     | GrossYearly Float
 
 
-raw : Salary -> Float
-raw salary =
-    case salary of
-        NetMonthly amount ->
+raw : DisplayOptions.SalaryDisplay -> Salary -> Float
+raw option salary =
+    case ( option, salary ) of
+        ( DisplayOptions.NetMonthly, NetMonthly amount ) ->
             amount
 
-        GrossMonthly amount ->
+        ( DisplayOptions.NetMonthly, GrossMonthly amount ) ->
             amount * 0.65
 
-        NetYearly amount ->
+        ( DisplayOptions.NetMonthly, NetYearly amount ) ->
             amount / 12
 
-        GrossYearly amount ->
+        ( DisplayOptions.NetMonthly, GrossYearly amount ) ->
             amount * 0.65 / 12
+
+        ( DisplayOptions.GrossMonthly, GrossMonthly amount ) ->
+            amount
+
+        ( DisplayOptions.GrossMonthly, NetMonthly amount ) ->
+            amount * 1.35
+
+        ( DisplayOptions.GrossMonthly, NetYearly amount ) ->
+            amount * 1.35 / 12
+
+        ( DisplayOptions.GrossMonthly, GrossYearly amount ) ->
+            amount / 12
+
+        ( DisplayOptions.NetYearly, NetYearly amount ) ->
+            amount
+
+        ( DisplayOptions.NetYearly, NetMonthly amount ) ->
+            amount * 12
+
+        ( DisplayOptions.NetYearly, GrossMonthly amount ) ->
+            amount * 12 * 0.65
+
+        ( DisplayOptions.NetYearly, GrossYearly amount ) ->
+            amount * 0.65
+
+        ( DisplayOptions.GrossYearly, GrossYearly amount ) ->
+            amount
+
+        ( DisplayOptions.GrossYearly, NetMonthly amount ) ->
+            amount * 1.35 * 12
+
+        ( DisplayOptions.GrossYearly, GrossMonthly amount ) ->
+            amount * 12
+
+        ( DisplayOptions.GrossYearly, NetYearly amount ) ->
+            amount * 1.35
 
 
 map : (Float -> Float) -> Salary -> Salary
