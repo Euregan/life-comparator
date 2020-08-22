@@ -6,6 +6,7 @@
   --element-margin: 0.5rem;
   --table-hover-color: #f4f5f5;
   --main-color: #2f9cc8;
+  --dimmed-text: #777777;
 }
 
 main {
@@ -32,7 +33,7 @@ thead tr:first-child {
 
 table .year,
 thead {
-  color: #777;
+  color: var(--dimmed-text);
 }
 
 td {
@@ -96,5 +97,21 @@ th:not(.year):hover::after {
   height: 10000px;
   width: 100%;
   z-index: -1;
+}
+
+/* SOURCES */
+
+.sources,
+.sources a {
+  color: var(--dimmed-text);
+}
+
+.sources a {
+  text-decoration: none;
+}
+
+.sources ul {
+  list-style: none;
+  padding: 0;
 }
 
