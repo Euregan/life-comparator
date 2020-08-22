@@ -1,6 +1,7 @@
 module Main exposing (main)
 
 import Browser
+import Color
 import Component.DisplayOptions as DisplayOptions
 import Component.Graph as Graph
 import Component.Layout as Layout
@@ -164,16 +165,16 @@ view model =
                 ]
             , Layout.columns
                 [ Graph.chart "Femmes"
-                    [ Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ women } -> women.worker) salaries) rawSalariesWithInflation
-                    , Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ women } -> women.employee) salaries) rawSalariesWithInflation
-                    , Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ women } -> women.technician) salaries) rawSalariesWithInflation
-                    , Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ women } -> women.executive) salaries) rawSalariesWithInflation
+                    [ ( Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ women } -> women.worker) salaries) rawSalariesWithInflation, Color.rgb 0.99 0.52 0.54 )
+                    , ( Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ women } -> women.employee) salaries) rawSalariesWithInflation, Color.rgb 1 0.6 0.53 )
+                    , ( Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ women } -> women.technician) salaries) rawSalariesWithInflation, Color.rgb 1 0.67 0.53 )
+                    , ( Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ women } -> women.executive) salaries) rawSalariesWithInflation, Color.rgb 1 0.76 0.53 )
                     ]
                 , Graph.chart "Hommes"
-                    [ Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ men } -> men.worker) salaries) rawSalariesWithInflation
-                    , Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ men } -> men.employee) salaries) rawSalariesWithInflation
-                    , Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ men } -> men.technician) salaries) rawSalariesWithInflation
-                    , Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ men } -> men.executive) salaries) rawSalariesWithInflation
+                    [ ( Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ men } -> men.worker) salaries) rawSalariesWithInflation, Color.rgb 0.99 0.52 0.54 )
+                    , ( Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ men } -> men.employee) salaries) rawSalariesWithInflation, Color.rgb 1 0.6 0.53 )
+                    , ( Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ men } -> men.technician) salaries) rawSalariesWithInflation, Color.rgb 1 0.67 0.53 )
+                    , ( Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ men } -> men.executive) salaries) rawSalariesWithInflation, Color.rgb 1 0.76 0.53 )
                     ]
                 ]
             , table []

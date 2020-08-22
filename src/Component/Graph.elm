@@ -1,7 +1,7 @@
 module Component.Graph exposing (..)
 
 import Axis
-import Color
+import Color exposing (Color)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Path exposing (Path)
@@ -30,25 +30,27 @@ padding =
     60
 
 
-maxY : List (List ( Int, Maybe Float )) -> Float
+maxY : List ( List ( Int, Maybe Float ), Color ) -> Float
 maxY model =
     Maybe.withDefault 0 <|
         List.maximum <|
             List.map
-                (List.foldl
-                    (\( _, maybeValue ) acc ->
-                        case maybeValue of
-                            Nothing ->
-                                acc
-
-                            Just value ->
-                                if value > acc then
-                                    value
-
-                                else
+                (\( submodel, _ ) ->
+                    List.foldl
+                        (\( _, maybeValue ) acc ->
+                            case maybeValue of
+                                Nothing ->
                                     acc
-                    )
-                    0
+
+                                Just value ->
+                                    if value > acc then
+                                        value
+
+                                    else
+                                        acc
+                        )
+                        0
+                        submodel
                 )
                 model
 
@@ -63,8 +65,8 @@ yScale max =
     Scale.linear ( h - 1 * padding, 0 ) ( 0, max )
 
 
-xAxis : List (List ( Int, Maybe Float )) -> Svg msg
-xAxis model =
+xAxis : Svg msg
+xAxis =
     Axis.bottom [ Axis.tickCount 20 ] xScale
 
 
@@ -84,16 +86,16 @@ line max model =
         |> Shape.line Shape.monotoneInXCurve
 
 
-chart : String -> List (List ( Int, Maybe Float )) -> Html msg
+chart : String -> List ( List ( Int, Maybe Float ), Color ) -> Html msg
 chart title model =
     div [ Html.Attributes.class "graph" ]
         [ div [ Html.Attributes.class "title" ] [ text title ]
         , svg [ viewBox 0 0 w h ]
             [ g [ transform [ Translate (padding - 1) (h - padding) ] ]
-                [ xAxis model ]
+                [ xAxis ]
             , g [ transform [ Translate (padding - 1) 0 ] ]
                 [ yAxis (maxY model) ]
             , g [ transform [ Translate padding 0 ] ] <|
-                List.map (\datapoints -> Path.element (line (maxY model) datapoints) [ stroke <| Paint <| Color.rgb 1 0 0, strokeWidth 3, fill PaintNone ]) model
+                List.map (\( datapoints, color ) -> Path.element (line (maxY model) datapoints) [ stroke <| Paint color, strokeWidth 3, fill PaintNone ]) model
             ]
         ]
