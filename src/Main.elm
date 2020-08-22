@@ -145,6 +145,11 @@ view model =
                 )
                 model.salaries
                 model.inflation
+
+        rawSalariesWithInflation =
+            Chronology.map
+                (\_ maybeSalaries -> Maybe.map (MenWomen.map (SocioProfessionalCategories.map Salary.raw)) maybeSalaries)
+                salariesWithInflation
     in
     { title = ""
     , body =
@@ -154,39 +159,19 @@ view model =
                 [ User.card UserSalaryChanged model.user
                 , DisplayOptions.card model.displayOptions SalaryDisplayChanged
                 ]
-            , Graph.chart <|
-                [ Chronology.toList <|
-                    Chronology.map
-                        (\_ maybeSalaries -> Maybe.map (\{ women } -> Salary.raw women.worker) maybeSalaries)
-                        salariesWithInflation
-                , Chronology.toList <|
-                    Chronology.map
-                        (\_ maybeSalaries -> Maybe.map (\{ men } -> Salary.raw men.worker) maybeSalaries)
-                        salariesWithInflation
-                , Chronology.toList <|
-                    Chronology.map
-                        (\_ maybeSalaries -> Maybe.map (\{ women } -> Salary.raw women.employee) maybeSalaries)
-                        salariesWithInflation
-                , Chronology.toList <|
-                    Chronology.map
-                        (\_ maybeSalaries -> Maybe.map (\{ men } -> Salary.raw men.employee) maybeSalaries)
-                        salariesWithInflation
-                , Chronology.toList <|
-                    Chronology.map
-                        (\_ maybeSalaries -> Maybe.map (\{ women } -> Salary.raw women.technician) maybeSalaries)
-                        salariesWithInflation
-                , Chronology.toList <|
-                    Chronology.map
-                        (\_ maybeSalaries -> Maybe.map (\{ men } -> Salary.raw men.technician) maybeSalaries)
-                        salariesWithInflation
-                , Chronology.toList <|
-                    Chronology.map
-                        (\_ maybeSalaries -> Maybe.map (\{ women } -> Salary.raw women.executive) maybeSalaries)
-                        salariesWithInflation
-                , Chronology.toList <|
-                    Chronology.map
-                        (\_ maybeSalaries -> Maybe.map (\{ men } -> Salary.raw men.executive) maybeSalaries)
-                        salariesWithInflation
+            , Layout.columns
+                [ Graph.chart "Femmes"
+                    [ Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ women } -> women.worker) salaries) rawSalariesWithInflation
+                    , Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ women } -> women.employee) salaries) rawSalariesWithInflation
+                    , Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ women } -> women.technician) salaries) rawSalariesWithInflation
+                    , Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ women } -> women.executive) salaries) rawSalariesWithInflation
+                    ]
+                , Graph.chart "Hommes"
+                    [ Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ men } -> men.worker) salaries) rawSalariesWithInflation
+                    , Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ men } -> men.employee) salaries) rawSalariesWithInflation
+                    , Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ men } -> men.technician) salaries) rawSalariesWithInflation
+                    , Chronology.toList <| Chronology.map (\_ salaries -> Maybe.map (\{ men } -> men.executive) salaries) rawSalariesWithInflation
+                    ]
                 ]
             , table []
                 [ thead []

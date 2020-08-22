@@ -62,7 +62,15 @@ td {
   flex-direction: column;
 }
 
-/* HOVER */
+/* GRAPH */
+
+.graph > .title {
+  font-weight: bold;
+  margin-bottom: var(--element-margin);
+  text-align: center;
+}
+
+/* TABLE HOVER */
 
 thead tr:first-child td:hover {
   background-color: var(--table-hover-color);
