@@ -5,6 +5,7 @@ import Component.DisplayOptions as DisplayOptions
 import Component.Graph as Graph
 import Component.Layout as Layout
 import Component.Salary as Salary
+import Component.Source as Source
 import Component.User as User
 import Data.Chronology as Chronology exposing (Chronology)
 import Data.Gender exposing (Gender(..))
@@ -36,6 +37,7 @@ type Msg
 type alias Model =
     { user : User
     , displayOptions : DisplayOptions.Options
+    , sources : List Source
     , salaries : Chronology (MenWomen (SocioProfessionalCategories Salary))
     , inflation : Chronology Float
     }
@@ -72,6 +74,7 @@ init flags =
       , displayOptions =
             { salary = DisplayOptions.NetMonthly
             }
+      , sources = List.concat [ flags.salaries.sources, flags.inflation.sources ]
       , salaries =
             Dict.fromList flags.salaries.data
                 |> Dict.map
@@ -212,6 +215,7 @@ view model =
                             Chronology.toList <|
                                 salariesWithInflation
                 ]
+            , Source.list model.sources
             ]
         ]
     }
