@@ -1,0 +1,1272 @@
+{
+  "sources": [
+    {
+      "label": "Séries longues sur les salaires (1950-2010), Déclaration annuelle de données sociales (DADS) et Législation sociale - Insee Résultats",
+      "organism": "INSEE",
+      "url": "https://www.insee.fr/fr/statistiques/2122816?sommaire=2122819",
+      "date": "2013/06/13"
+    }
+  ],
+  "data": [
+    [
+      1950,
+      {
+        "grossCeiling": 34,
+        "netCeiling": 32,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.266, 0.266],
+          "between1And3Ceilings": [0.006, 0.006],
+          "between3And4Ceilings": [0.006, 0.006],
+          "above4Ceilings": [0.006, 0.006]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.06, 0.06],
+          "between1And3Ceilings": [0, 0],
+          "between3And4Ceilings": [0, 0],
+          "between4And8Ceilings": [0, 0],
+          "above8Ceilings": [0, 0]
+        }
+      }
+    ],
+    [
+      1951,
+      {
+        "grossCeiling": 44,
+        "netCeiling": 41,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.2679, 0.2679],
+          "between1And3Ceilings": [0.006, 0.006],
+          "between3And4Ceilings": [0.006, 0.006],
+          "above4Ceilings": [0.006, 0.006]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.06, 0.06],
+          "between1And3Ceilings": [0, 0],
+          "between3And4Ceilings": [0, 0],
+          "between4And8Ceilings": [0, 0],
+          "above8Ceilings": [0, 0]
+        }
+      }
+    ],
+    [
+      1952,
+      {
+        "grossCeiling": 56,
+        "netCeiling": 53,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.2735, 0.2735],
+          "between1And3Ceilings": [0.006, 0.006],
+          "between3And4Ceilings": [0.006, 0.006],
+          "above4Ceilings": [0.006, 0.006]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.06, 0.06],
+          "between1And3Ceilings": [0, 0],
+          "between3And4Ceilings": [0, 0],
+          "between4And8Ceilings": [0, 0],
+          "above8Ceilings": [0, 0]
+        }
+      }
+    ],
+    [
+      1953,
+      {
+        "grossCeiling": 58,
+        "netCeiling": 54,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.2835, 0.2835],
+          "between1And3Ceilings": [0.016, 0.016],
+          "between3And4Ceilings": [0.016, 0.016],
+          "above4Ceilings": [0.016, 0.016]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.06, 0.06],
+          "between1And3Ceilings": [0, 0],
+          "between3And4Ceilings": [0, 0],
+          "between4And8Ceilings": [0, 0],
+          "above8Ceilings": [0, 0]
+        }
+      }
+    ],
+    [
+      1954,
+      {
+        "grossCeiling": 58,
+        "netCeiling": 54,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.2835, 0.2835],
+          "between1And3Ceilings": [0.016, 0.016],
+          "between3And4Ceilings": [0.016, 0.016],
+          "above4Ceilings": [0.016, 0.016]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.06, 0.06],
+          "between1And3Ceilings": [0, 0],
+          "between3And4Ceilings": [0, 0],
+          "between4And8Ceilings": [0, 0],
+          "above8Ceilings": [0, 0]
+        }
+      }
+    ],
+    [
+      1955,
+      {
+        "grossCeiling": 60,
+        "netCeiling": 57,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.2835, 0.2835],
+          "between1And3Ceilings": [0.016, 0.016],
+          "between3And4Ceilings": [0.016, 0.016],
+          "above4Ceilings": [0.016, 0.016]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.06, 0.06],
+          "between1And3Ceilings": [0, 0],
+          "between3And4Ceilings": [0, 0],
+          "between4And8Ceilings": [0, 0],
+          "above8Ceilings": [0, 0]
+        }
+      }
+    ],
+    [
+      1956,
+      {
+        "grossCeiling": 67,
+        "netCeiling": 63,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.2835, 0.2835],
+          "between1And3Ceilings": [0.016, 0.016],
+          "between3And4Ceilings": [0.016, 0.016],
+          "above4Ceilings": [0.016, 0.016]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.06, 0.06],
+          "between1And3Ceilings": [0, 0],
+          "between3And4Ceilings": [0, 0],
+          "between4And8Ceilings": [0, 0],
+          "above8Ceilings": [0, 0]
+        }
+      }
+    ],
+    [
+      1957,
+      {
+        "grossCeiling": 67,
+        "netCeiling": 63,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.2835, 0.2835],
+          "between1And3Ceilings": [0.016, 0.016],
+          "between3And4Ceilings": [0.016, 0.016],
+          "above4Ceilings": [0.016, 0.016]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.06, 0.06],
+          "between1And3Ceilings": [0, 0],
+          "between3And4Ceilings": [0, 0],
+          "between4And8Ceilings": [0, 0],
+          "above8Ceilings": [0, 0]
+        }
+      }
+    ],
+    [
+      1958,
+      {
+        "grossCeiling": 76,
+        "netCeiling": 72,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.2585, 0.2585],
+          "between1And3Ceilings": [0.016, 0.016],
+          "between3And4Ceilings": [0.016, 0.016],
+          "above4Ceilings": [0.016, 0.016]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.06, 0.06],
+          "between1And3Ceilings": [0, 0],
+          "between3And4Ceilings": [0, 0],
+          "between4And8Ceilings": [0, 0],
+          "above8Ceilings": [0, 0]
+        }
+      }
+    ],
+    [
+      1959,
+      {
+        "grossCeiling": 84,
+        "netCeiling": 79,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.2915, 0.2915],
+          "between1And3Ceilings": [0.024, 0.024],
+          "between3And4Ceilings": [0.024, 0.024],
+          "above4Ceilings": [0.016, 0.016]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.062, 0.062],
+          "between1And3Ceilings": [0.002, 0.002],
+          "between3And4Ceilings": [0.002, 0.002],
+          "between4And8Ceilings": [0, 0],
+          "above8Ceilings": [0, 0]
+        }
+      }
+    ],
+    [
+      1960,
+      {
+        "grossCeiling": 87,
+        "netCeiling": 82,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.2915, 0.2915],
+          "between1And3Ceilings": [0.024, 0.024],
+          "between3And4Ceilings": [0.024, 0.024],
+          "above4Ceilings": [0.016, 0.016]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.062, 0.062],
+          "between1And3Ceilings": [0.002, 0.002],
+          "between3And4Ceilings": [0.002, 0.002],
+          "between4And8Ceilings": [0, 0],
+          "above8Ceilings": [0, 0]
+        }
+      }
+    ],
+    [
+      1961,
+      {
+        "grossCeiling": 103,
+        "netCeiling": 97,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3015, 0.3015],
+          "between1And3Ceilings": [0.024, 0.024],
+          "between3And4Ceilings": [0.024, 0.024],
+          "above4Ceilings": [0.016, 0.016]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.062, 0.062],
+          "between1And3Ceilings": [0.002, 0.002],
+          "between3And4Ceilings": [0.002, 0.002],
+          "between4And8Ceilings": [0, 0],
+          "above8Ceilings": [0, 0]
+        }
+      }
+    ],
+    [
+      1962,
+      {
+        "grossCeiling": 122,
+        "netCeiling": 113,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3165, 0.3165],
+          "between1And3Ceilings": [0.039, 0.078],
+          "between3And4Ceilings": [0.024, 0.078],
+          "above4Ceilings": [0.016, 0.016]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.0705, 0.068],
+          "between1And3Ceilings": [0.008, 0.008],
+          "between3And4Ceilings": [0.0005, 0.008],
+          "between4And8Ceilings": [0, 0],
+          "above8Ceilings": [0, 0]
+        }
+      }
+    ],
+    [
+      1963,
+      {
+        "grossCeiling": 133,
+        "netCeiling": 123,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3105, 0.3105],
+          "between1And3Ceilings": [0.033, 0.072],
+          "between3And4Ceilings": [0.018, 0.072],
+          "above4Ceilings": [0.016, 0.016]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.0705, 0.0705],
+          "between1And3Ceilings": [0.0105, 0.0185],
+          "between3And4Ceilings": [0.0005, 0.0185],
+          "between4And8Ceilings": [0, 0],
+          "above8Ceilings": [0, 0]
+        }
+      }
+    ],
+    [
+      1964,
+      {
+        "grossCeiling": 145,
+        "netCeiling": 135,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3105, 0.3105],
+          "between1And3Ceilings": [0.033, 0.072],
+          "between3And4Ceilings": [0.018, 0.072],
+          "above4Ceilings": [0.016, 0.016]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.0705, 0.0705],
+          "between1And3Ceilings": [0.0105, 0.0185],
+          "between3And4Ceilings": [0.0005, 0.0185],
+          "between4And8Ceilings": [0, 0],
+          "above8Ceilings": [0, 0]
+        }
+      }
+    ],
+    [
+      1965,
+      {
+        "grossCeiling": 155,
+        "netCeiling": 145,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3105, 0.3105],
+          "between1And3Ceilings": [0.033, 0.075],
+          "between3And4Ceilings": [0.018, 0.075],
+          "above4Ceilings": [0.016, 0.016]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.0705, 0.0705],
+          "between1And3Ceilings": [0.0105, 0.0195],
+          "between3And4Ceilings": [0.0005, 0.0195],
+          "between4And8Ceilings": [0, 0],
+          "above8Ceilings": [0, 0]
+        }
+      }
+    ],
+    [
+      1966,
+      {
+        "grossCeiling": 165,
+        "netCeiling": 153,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3136, 0.3136],
+          "between1And3Ceilings": [0.033, 0.078],
+          "between3And4Ceilings": [0.018, 0.078],
+          "above4Ceilings": [0.016, 0.016]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.0705, 0.0705],
+          "between1And3Ceilings": [0.0105, 0.0205],
+          "between3And4Ceilings": [0.0005, 0.0205],
+          "between4And8Ceilings": [0, 0],
+          "above8Ceilings": [0, 0]
+        }
+      }
+    ],
+    [
+      1967,
+      {
+        "grossCeiling": 174,
+        "netCeiling": 160,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3383, 0.3383],
+          "between1And3Ceilings": [0.047, 0.083],
+          "between3And4Ceilings": [0.023, 0.083],
+          "above4Ceilings": [0.021, 0.021]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.0778, 0.0778],
+          "between1And3Ceilings": [0.019, 0.023],
+          "between3And4Ceilings": [0.003, 0.023],
+          "between4And8Ceilings": [0.0025, 0.0025],
+          "above8Ceilings": [0.0025, 0.0025]
+        }
+      }
+    ],
+    [
+      1968,
+      {
+        "grossCeiling": 183,
+        "netCeiling": 168,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3278, 0.3278],
+          "between1And3Ceilings": [0.0628, 0.0988],
+          "between3And4Ceilings": [0.0388, 0.0988],
+          "above4Ceilings": [0.036, 0.036]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.0817, 0.0817],
+          "between1And3Ceilings": [0.0267, 0.0307],
+          "between3And4Ceilings": [0.0107, 0.0307],
+          "between4And8Ceilings": [0.01, 0.01],
+          "above8Ceilings": [0.01, 0.01]
+        }
+      }
+    ],
+    [
+      1969,
+      {
+        "grossCeiling": 207,
+        "netCeiling": 190,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3282, 0.3282],
+          "between1And3Ceilings": [0.0632, 0.0992],
+          "between3And4Ceilings": [0.0392, 0.0992],
+          "above4Ceilings": [0.036, 0.036]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.0818, 0.0818],
+          "between1And3Ceilings": [0.0268, 0.0308],
+          "between3And4Ceilings": [0.0108, 0.0308],
+          "between4And8Ceilings": [0.01, 0.01],
+          "above8Ceilings": [0.01, 0.01]
+        }
+      }
+    ],
+    [
+      1970,
+      {
+        "grossCeiling": 229,
+        "netCeiling": 210,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3281, 0.3281],
+          "between1And3Ceilings": [0.0632, 0.0992],
+          "between3And4Ceilings": [0.0392, 0.0992],
+          "above4Ceilings": [0.036, 0.036]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.0818, 0.0818],
+          "between1And3Ceilings": [0.0268, 0.0308],
+          "between3And4Ceilings": [0.0108, 0.0308],
+          "between4And8Ceilings": [0.01, 0.01],
+          "above8Ceilings": [0.01, 0.01]
+        }
+      }
+    ],
+    [
+      1971,
+      {
+        "grossCeiling": 252,
+        "netCeiling": 231,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3308, 0.3308],
+          "between1And3Ceilings": [0.0638, 0.0992],
+          "between3And4Ceilings": [0.0392, 0.0992],
+          "above4Ceilings": [0.036, 0.036]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.0822, 0.0822],
+          "between1And3Ceilings": [0.0276, 0.0308],
+          "between3And4Ceilings": [0.0108, 0.0308],
+          "between4And8Ceilings": [0.01, 0.01],
+          "above8Ceilings": [0.01, 0.01]
+        }
+      }
+    ],
+    [
+      1972,
+      {
+        "grossCeiling": 279,
+        "netCeiling": 256,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3384, 0.3384],
+          "between1And3Ceilings": [0.0704, 0.1062],
+          "between3And4Ceilings": [0.0452, 0.1062],
+          "above4Ceilings": [0.042, 0.043]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.0826, 0.0826],
+          "between1And3Ceilings": [0.0276, 0.0308],
+          "between3And4Ceilings": [0.0108, 0.0308],
+          "between4And8Ceilings": [0.01, 0.01],
+          "above8Ceilings": [0.01, 0.01]
+        }
+      }
+    ],
+    [
+      1973,
+      {
+        "grossCeiling": 311,
+        "netCeiling": 285,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3414, 0.3456],
+          "between1And3Ceilings": [0.0734, 0.1078],
+          "between3And4Ceilings": [0.0476, 0.1078],
+          "above4Ceilings": [0.042, 0.042]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.0836, 0.0836],
+          "between1And3Ceilings": [0.0286, 0.0316],
+          "between3And4Ceilings": [0.0114, 0.0316],
+          "between4And8Ceilings": [0.01, 0.01],
+          "above8Ceilings": [0.01, 0.01]
+        }
+      }
+    ],
+    [
+      1974,
+      {
+        "grossCeiling": 354,
+        "netCeiling": 324,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3453, 0.3489],
+          "between1And3Ceilings": [0.0773, 0.1113],
+          "between3And4Ceilings": [0.0509, 0.1113],
+          "above4Ceilings": [0.044, 0.044]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.0842, 0.0842],
+          "between1And3Ceilings": [0.0292, 0.0318],
+          "between3And4Ceilings": [0.0116, 0.0318],
+          "between4And8Ceilings": [0.01, 0.01],
+          "above8Ceilings": [0.01, 0.01]
+        }
+      }
+    ],
+    [
+      1975,
+      {
+        "grossCeiling": 419,
+        "netCeiling": 383,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3582, 0.36],
+          "between1And3Ceilings": [0.0902, 0.1242],
+          "between3And4Ceilings": [0.0638, 0.1242],
+          "above4Ceilings": [0.045, 0.045]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.0868, 0.0868],
+          "between1And3Ceilings": [0.0318, 0.0344],
+          "between3And4Ceilings": [0.0142, 0.0344],
+          "between4And8Ceilings": [0.01, 0.01],
+          "above8Ceilings": [0.01, 0.01]
+        }
+      }
+    ],
+    [
+      1976,
+      {
+        "grossCeiling": 482,
+        "netCeiling": 435,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3703, 0.3703],
+          "between1And3Ceilings": [0.098, 0.132],
+          "between3And4Ceilings": [0.0716, 0.132],
+          "above4Ceilings": [0.05, 0.05]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.0967, 0.0967],
+          "between1And3Ceilings": [0.0374, 0.04],
+          "between3And4Ceilings": [0.0198, 0.04],
+          "between4And8Ceilings": [0.015, 0.015],
+          "above8Ceilings": [0.015, 0.015]
+        }
+      }
+    ],
+    [
+      1977,
+      {
+        "grossCeiling": 550,
+        "netCeiling": 494,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.374, 0.374],
+          "between1And3Ceilings": [0.0965, 0.1305],
+          "between3And4Ceilings": [0.0701, 0.1305],
+          "above4Ceilings": [0.05, 0.05]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1015, 0.1015],
+          "between1And3Ceilings": [0.037, 0.0396],
+          "between3And4Ceilings": [0.0194, 0.0396],
+          "between4And8Ceilings": [0.015, 0.015],
+          "above8Ceilings": [0.015, 0.015]
+        }
+      }
+    ],
+    [
+      1978,
+      {
+        "grossCeiling": 610,
+        "netCeiling": 547,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3788, 0.3788],
+          "between1And3Ceilings": [0.0018, 0.1357],
+          "between3And4Ceilings": [0.0754, 0.1357],
+          "above4Ceilings": [0.0505, 0.0505]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1027, 0.1027],
+          "between1And3Ceilings": [0.037, 0.0408],
+          "between3And4Ceilings": [0.0206, 0.0408],
+          "between4And8Ceilings": [0.015, 0.015],
+          "above8Ceilings": [0.015, 0.015]
+        }
+      }
+    ],
+    [
+      1979,
+      {
+        "grossCeiling": 681,
+        "netCeiling": 599,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3891, 0.3891],
+          "between1And3Ceilings": [0.0266, 0.1624],
+          "between3And4Ceilings": [0.0002, 0.1624],
+          "above4Ceilings": [0.071, 0.071]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1214, 0.1216],
+          "between1And3Ceilings": [0.0604, 0.0636],
+          "between3And4Ceilings": [0.0428, 0.0636],
+          "between4And8Ceilings": [0.035, 0.035],
+          "above8Ceilings": [0.035, 0.035]
+        }
+      }
+    ],
+    [
+      1980,
+      {
+        "grossCeiling": 764,
+        "netCeiling": 666,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.39, 0.39],
+          "between1And3Ceilings": [0.0275, 0.1633],
+          "between3And4Ceilings": [0.0011, 0.1633],
+          "above4Ceilings": [0.071, 0.071]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.128, 0.131],
+          "between1And3Ceilings": [0.081, 0.0842],
+          "between3And4Ceilings": [0.0634, 0.0842],
+          "between4And8Ceilings": [0.055, 0.055],
+          "above8Ceilings": [0.055, 0.055]
+        }
+      }
+    ],
+    [
+      1981,
+      {
+        "grossCeiling": 874,
+        "netCeiling": 767,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.39, 0.39],
+          "between1And3Ceilings": [0.0333, 0.1691],
+          "between3And4Ceilings": [0.0069, 0.1691],
+          "above4Ceilings": [0.0768, 0.0768]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1222, 0.1253],
+          "between1And3Ceilings": [0.0737, 0.0769],
+          "between3And4Ceilings": [0.0561, 0.0769],
+          "between4And8Ceilings": [0.0475, 0.0475],
+          "above8Ceilings": [0.0475, 0.0475]
+        }
+      }
+    ],
+    [
+      1982,
+      {
+        "grossCeiling": 1042,
+        "netCeiling": 907,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3912, 0.3912],
+          "between1And3Ceilings": [0.0637, 0.1995],
+          "between3And4Ceilings": [0.0373, 0.1995],
+          "above4Ceilings": [0.106, 0.106]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1298, 0.1298],
+          "between1And3Ceilings": [0.0828, 0.086],
+          "between3And4Ceilings": [0.0652, 0.086],
+          "between4And8Ceilings": [0.056, 0.056],
+          "above8Ceilings": [0.056, 0.056]
+        }
+      }
+    ],
+    [
+      1983,
+      {
+        "grossCeiling": 1165,
+        "netCeiling": 1006,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.4014, 0.4014],
+          "between1And3Ceilings": [0.0739, 0.2085],
+          "between3And4Ceilings": [0.0463, 0.2085],
+          "above4Ceilings": [0.106, 0.106]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1366, 0.1366],
+          "between1And3Ceilings": [0.0896, 0.092],
+          "between3And4Ceilings": [0.0712, 0.092],
+          "between4And8Ceilings": [0.056, 0.056],
+          "above8Ceilings": [0.056, 0.056]
+        }
+      }
+    ],
+    [
+      1984,
+      {
+        "grossCeiling": 1265,
+        "netCeiling": 1075,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3962, 0.3962],
+          "between1And3Ceilings": [0.0232, 0.268],
+          "between3And4Ceilings": [0.0956, 0.268],
+          "above4Ceilings": [0.152, 0.152]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1501, 0.1501],
+          "between1And3Ceilings": [0.0969, 0.1096],
+          "between3And4Ceilings": [0.0785, 0.1096],
+          "between4And8Ceilings": [0.056, 0.056],
+          "above8Ceilings": [0.056, 0.056]
+        }
+      }
+    ],
+    [
+      1985,
+      {
+        "grossCeiling": 1356,
+        "netCeiling": 1150,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3972, 0.3972],
+          "between1And3Ceilings": [0.0242, 0.2691],
+          "between3And4Ceilings": [0.0966, 0.2691],
+          "above4Ceilings": [0.152, 0.152]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1519, 0.1519],
+          "between1And3Ceilings": [0.0999, 0.1126],
+          "between3And4Ceilings": [0.0815, 0.1126],
+          "between4And8Ceilings": [0.056, 0.056],
+          "above8Ceilings": [0.056, 0.056]
+        }
+      }
+    ],
+    [
+      1986,
+      {
+        "grossCeiling": 1425,
+        "netCeiling": 1201,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3988, 0.3988],
+          "between1And3Ceilings": [0.0271, 0.2728],
+          "between3And4Ceilings": [0.0995, 0.2728],
+          "above4Ceilings": [0.1533, 0.152]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1574, 0.1574],
+          "between1And3Ceilings": [0.1025, 0.1161],
+          "between3And4Ceilings": [0.0841, 0.1161],
+          "between4And8Ceilings": [0.056, 0.056],
+          "above8Ceilings": [0.056, 0.056]
+        }
+      }
+    ],
+    [
+      1987,
+      {
+        "grossCeiling": 1484,
+        "netCeiling": 1239,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3999, 0.3999],
+          "between1And3Ceilings": [0.0269, 0.2761],
+          "between3And4Ceilings": [0.0987, 0.2761],
+          "above4Ceilings": [0.1525, 0.1525]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1649, 0.1649],
+          "between1And3Ceilings": [0.1049, 0.1193],
+          "between3And4Ceilings": [0.0861, 0.1193],
+          "between4And8Ceilings": [0.058, 0.058],
+          "above8Ceilings": [0.058, 0.058]
+        }
+      }
+    ],
+    [
+      1988,
+      {
+        "grossCeiling": 1529,
+        "netCeiling": 1269,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.4014, 0.4014],
+          "between1And3Ceilings": [0.0284, 0.277],
+          "between3And4Ceilings": [0.0996, 0.277],
+          "above4Ceilings": [0.1525, 0.1525]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1699, 0.1699],
+          "between1And3Ceilings": [0.1089, 0.1229],
+          "between3And4Ceilings": [0.0897, 0.1229],
+          "between4And8Ceilings": [0.06, 0.093],
+          "above8Ceilings": [0.06, 0.06]
+        }
+      }
+    ],
+    [
+      1989,
+      {
+        "grossCeiling": 1592,
+        "netCeiling": 1305,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3911, 0.3911],
+          "between1And3Ceilings": [0.0631, 0.314],
+          "between3And4Ceilings": [0.0793, 0.314],
+          "above4Ceilings": [0.1875, 0.1875]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1799, 0.1799],
+          "between1And3Ceilings": [0.1089, 0.124],
+          "between3And4Ceilings": [0.0897, 0.124],
+          "between4And8Ceilings": [0.06, 0.0941],
+          "above8Ceilings": [0.06, 0.06]
+        }
+      }
+    ],
+    [
+      1990,
+      {
+        "grossCeiling": 1665,
+        "netCeiling": 1366,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3789, 0.3789],
+          "between1And3Ceilings": [0.0971, 0.3506],
+          "between3And4Ceilings": [0.0683, 0.3506],
+          "above4Ceilings": [0.2225, 0.2225]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1797, 0.1797],
+          "between1And3Ceilings": [0.1089, 0.1249],
+          "between3And4Ceilings": [0.0897, 0.1249],
+          "between4And8Ceilings": [0.06, 0.0951],
+          "above8Ceilings": [0.06, 0.06]
+        }
+      }
+    ],
+    [
+      1991,
+      {
+        "grossCeiling": 1750,
+        "netCeiling": 1435,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.379, 0.379],
+          "between1And3Ceilings": [0.0972, 0.35],
+          "between3And4Ceilings": [0.0677, 0.35],
+          "above4Ceilings": [0.2225, 0.2927]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1739, 0.1739],
+          "between1And3Ceilings": [0.1133, 0.1289],
+          "between3And4Ceilings": [0.0936, 0.1289],
+          "between4And8Ceilings": [0.0645, 0.0996],
+          "above8Ceilings": [0.0645, 0.0645]
+        }
+      }
+    ],
+    [
+      1992,
+      {
+        "grossCeiling": 1831,
+        "netCeiling": 1489,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3853, 0.3853],
+          "between1And3Ceilings": [0.0035, 0.3563],
+          "between3And4Ceilings": [0.074, 0.3563],
+          "above4Ceilings": [0.2265, 0.2967]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1798, 0.1798],
+          "between1And3Ceilings": [0.1201, 0.1357],
+          "between3And4Ceilings": [0.1004, 0.1357],
+          "between4And8Ceilings": [0.069, 0.1041],
+          "above8Ceilings": [0.069, 0.069]
+        }
+      }
+    ],
+    [
+      1993,
+      {
+        "grossCeiling": 1903,
+        "netCeiling": 1529,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3924, 0.3924],
+          "between1And3Ceilings": [0.0106, 0.3634],
+          "between3And4Ceilings": [0.0811, 0.3634],
+          "above4Ceilings": [0.227, 0.2972]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1836, 0.1836],
+          "between1And3Ceilings": [0.1241, 0.1397],
+          "between3And4Ceilings": [0.1044, 0.1397],
+          "between4And8Ceilings": [0.069, 0.1041],
+          "above8Ceilings": [0.069, 0.069]
+        }
+      }
+    ],
+    [
+      1994,
+      {
+        "grossCeiling": 1945,
+        "netCeiling": 1545,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3959, 0.3959],
+          "between1And3Ceilings": [0.0142, 0.3759],
+          "between3And4Ceilings": [0.0847, 0.3759],
+          "above4Ceilings": [0.2265, 0.3112]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1864, 0.1864],
+          "between1And3Ceilings": [0.1273, 0.149],
+          "between3And4Ceilings": [0.1076, 0.149],
+          "between4And8Ceilings": [0.069, 0.1114],
+          "above8Ceilings": [0.069, 0.069]
+        }
+      }
+    ],
+    [
+      1995,
+      {
+        "grossCeiling": 1981,
+        "netCeiling": 1571,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3959, 0.3959],
+          "between1And3Ceilings": [0.0142, 0.3851],
+          "between3And4Ceilings": [0.0847, 0.3851],
+          "above4Ceilings": [0.2265, 0.3265]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1864, 0.1864],
+          "between1And3Ceilings": [0.1273, 0.1578],
+          "between3And4Ceilings": [0.1076, 0.1578],
+          "between4And8Ceilings": [0.069, 0.119],
+          "above8Ceilings": [0.069, 0.069]
+        }
+      }
+    ],
+    [
+      1996,
+      {
+        "grossCeiling": 2048,
+        "netCeiling": 1605,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.3997, 0.3997],
+          "between1And3Ceilings": [0.018, 0.3908],
+          "between3And4Ceilings": [0.0842, 0.3908],
+          "above4Ceilings": [0.2265, 0.3328]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1892, 0.1892],
+          "between1And3Ceilings": [0.1301, 0.1641],
+          "between3And4Ceilings": [0.1076, 0.1641],
+          "between4And8Ceilings": [0.069, 0.1253],
+          "above8Ceilings": [0.069, 0.069]
+        }
+      }
+    ],
+    [
+      1997,
+      {
+        "grossCeiling": 2092,
+        "netCeiling": 1645,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.4008, 0.4013],
+          "between1And3Ceilings": [0.0191, 0.3949],
+          "between3And4Ceilings": [0.0816, 0.3949],
+          "above4Ceilings": [0.2265, 0.3395]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1766, 0.1769],
+          "between1And3Ceilings": [0.117, 0.155],
+          "between3And4Ceilings": [0.092, 0.155],
+          "between4And8Ceilings": [0.056, 0.1188],
+          "above8Ceilings": [0.056, 0.056]
+        }
+      }
+    ],
+    [
+      1998,
+      {
+        "grossCeiling": 2148,
+        "netCeiling": 1702,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.4046, 0.4055],
+          "between1And3Ceilings": [0.0229, 0.4016],
+          "between3And4Ceilings": [0.0816, 0.4016],
+          "above4Ceilings": [0.2265, 0.3462]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1316, 0.1321],
+          "between1And3Ceilings": [0.072, 0.114],
+          "between3And4Ceilings": [0.0445, 0.114],
+          "between4And8Ceilings": [0.0085, 0.0778],
+          "above8Ceilings": [0.0085, 0.0085]
+        }
+      }
+    ],
+    [
+      1999,
+      {
+        "grossCeiling": 2206,
+        "netCeiling": 1742,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.4081, 0.4094],
+          "between1And3Ceilings": [0.0264, 0.4081],
+          "between3And4Ceilings": [0.0814, 0.4081],
+          "above4Ceilings": [0.2265, 0.3528]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1341, 0.1349],
+          "between1And3Ceilings": [0.0745, 0.1205],
+          "between3And4Ceilings": [0.0445, 0.1205],
+          "between4And8Ceilings": [0.0085, 0.0843],
+          "above8Ceilings": [0.0085, 0.0085]
+        }
+      }
+    ],
+    [
+      2000,
+      {
+        "grossCeiling": 2241,
+        "netCeiling": 1770,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.4076, 0.4094],
+          "between1And3Ceilings": [0.0559, 0.408],
+          "between3And4Ceilings": [0.0809, 0.408],
+          "above4Ceilings": [0.2265, 0.3532]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1341, 0.1352],
+          "between1And3Ceilings": [0.0945, 0.1208],
+          "between3And4Ceilings": [0.0445, 0.1208],
+          "between4And8Ceilings": [0.0085, 0.0846],
+          "above8Ceilings": [0.0085, 0.0085]
+        }
+      }
+    ],
+    [
+      2001,
+      {
+        "grossCeiling": 2279,
+        "netCeiling": 1803,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.4044, 0.4066],
+          "between1And3Ceilings": [0.0525, 0.405],
+          "between3And4Ceilings": [0.0677, 0.405],
+          "above4Ceilings": [0.2265, 0.3537]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.133, 0.1343],
+          "between1And3Ceilings": [0.091, 0.1175],
+          "between3And4Ceilings": [0.0342, 0.1175],
+          "between4And8Ceilings": [0.0085, 0.0848],
+          "above8Ceilings": [0.0085, 0.0085]
+        }
+      }
+    ],
+    [
+      2002,
+      {
+        "grossCeiling": 2352,
+        "netCeiling": 1862,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.4055, 0.4077],
+          "between1And3Ceilings": [0.0685, 0.4061],
+          "between3And4Ceilings": [0.0655, 0.4061],
+          "above4Ceilings": [0.2265, 0.3537]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1325, 0.1338],
+          "between1And3Ceilings": [0.098, 0.1145],
+          "between3And4Ceilings": [0.029, 0.1145],
+          "between4And8Ceilings": [0.0085, 0.0848],
+          "above8Ceilings": [0.0085, 0.0085]
+        }
+      }
+    ],
+    [
+      2003,
+      {
+        "grossCeiling": 2432,
+        "netCeiling": 1916,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.4103, 0.4125],
+          "between1And3Ceilings": [0.0733, 0.4109],
+          "between3And4Ceilings": [0.0703, 0.4109],
+          "above4Ceilings": [0.2265, 0.3537]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.136, 0.1373],
+          "between1And3Ceilings": [0.1015, 0.118],
+          "between3And4Ceilings": [0.0325, 0.118],
+          "between4And8Ceilings": [0.0085, 0.0848],
+          "above8Ceilings": [0.0085, 0.0085]
+        }
+      }
+    ],
+    [
+      2004,
+      {
+        "grossCeiling": 2476,
+        "netCeiling": 1951,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.4141, 0.4163],
+          "between1And3Ceilings": [0.0921, 0.4147],
+          "between3And4Ceilings": [0.0741, 0.4147],
+          "above4Ceilings": [0.2296, 0.3568]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.136, 0.1373],
+          "between1And3Ceilings": [0.1115, 0.118],
+          "between3And4Ceilings": [0.0325, 0.118],
+          "between4And8Ceilings": [0.0085, 0.0848],
+          "above8Ceilings": [0.0085, 0.0085]
+        }
+      }
+    ],
+    [
+      2005,
+      {
+        "grossCeiling": 2516,
+        "netCeiling": 1979,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.4155, 0.4177],
+          "between1And3Ceilings": [0.0085, 0.416],
+          "between3And4Ceilings": [0.0755, 0.416],
+          "above4Ceilings": [0.2317, 0.3589]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.136, 0.1373],
+          "between1And3Ceilings": [0.1215, 0.118],
+          "between3And4Ceilings": [0.0325, 0.118],
+          "between4And8Ceilings": [0.0085, 0.0848],
+          "above8Ceilings": [0.0085, 0.0085]
+        }
+      }
+    ],
+    [
+      2006,
+      {
+        "grossCeiling": 2589,
+        "netCeiling": 2032,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.4157, 0.4179],
+          "between1And3Ceilings": [0.0077, 0.4163],
+          "between3And4Ceilings": [0.0747, 0.4163],
+          "above4Ceilings": [0.2323, 0.3605]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1374, 0.1387],
+          "between1And3Ceilings": [0.1219, 0.1204],
+          "between3And4Ceilings": [0.0329, 0.1204],
+          "between4And8Ceilings": [0.0085, 0.0868],
+          "above8Ceilings": [0.0085, 0.0085]
+        }
+      }
+    ],
+    [
+      2007,
+      {
+        "grossCeiling": 2682,
+        "netCeiling": 2106,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.4148, 0.417],
+          "between1And3Ceilings": [0.0068, 0.4154],
+          "between3And4Ceilings": [0.0738, 0.4154],
+          "above4Ceilings": [0.2323, 0.3605]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.137, 0.1383],
+          "between1And3Ceilings": [0.1215, 0.12],
+          "between3And4Ceilings": [0.0325, 0.12],
+          "between4And8Ceilings": [0.0085, 0.0868],
+          "above8Ceilings": [0.0085, 0.0085]
+        }
+      }
+    ],
+    [
+      2008,
+      {
+        "grossCeiling": 2773,
+        "netCeiling": 2178,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.4146, 0.4168],
+          "between1And3Ceilings": [0.0066, 0.4152],
+          "between3And4Ceilings": [0.0736, 0.4152],
+          "above4Ceilings": [0.2323, 0.3605]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.137, 0.1383],
+          "between1And3Ceilings": [0.1215, 0.12],
+          "between3And4Ceilings": [0.0325, 0.12],
+          "between4And8Ceilings": [0.0085, 0.0868],
+          "above8Ceilings": [0.0085, 0.0085]
+        }
+      }
+    ],
+    [
+      2009,
+      {
+        "grossCeiling": 2859,
+        "netCeiling": 2245,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.4159, 0.4181],
+          "between1And3Ceilings": [0.0079, 0.4165],
+          "between3And4Ceilings": [0.0749, 0.4165],
+          "above4Ceilings": [0.2323, 0.3605]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.137, 0.1383],
+          "between1And3Ceilings": [0.1215, 0.12],
+          "between3And4Ceilings": [0.0325, 0.12],
+          "between4And8Ceilings": [0.0085, 0.0868],
+          "above8Ceilings": [0.0085, 0.0085]
+        }
+      }
+    ],
+    [
+      2010,
+      {
+        "grossCeiling": 2885,
+        "netCeiling": 2266,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.4173, 0.4195],
+          "between1And3Ceilings": [0.0093, 0.4189],
+          "between3And4Ceilings": [0.0763, 0.4189],
+          "above4Ceilings": [0.2323, 0.3615]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.137, 0.1385],
+          "between1And3Ceilings": [0.1215, 0.12],
+          "between3And4Ceilings": [0.0325, 0.12],
+          "between4And8Ceilings": [0.0085, 0.0868],
+          "above8Ceilings": [0.0085, 0.0085]
+        }
+      }
+    ],
+    [
+      2011,
+      {
+        "grossCeiling": 2946,
+        "netCeiling": 2314,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.4166, 0.4191],
+          "between1And3Ceilings": [0.0096, 0.4181],
+          "between3And4Ceilings": [0.0766, 0.4181],
+          "above4Ceilings": [0.2333, 0.3615]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.137, 0.1385],
+          "between1And3Ceilings": [0.1215, 0.12],
+          "between3And4Ceilings": [0.0325, 0.12],
+          "between4And8Ceilings": [0.0085, 0.0868],
+          "above8Ceilings": [0.0085, 0.0085]
+        }
+      }
+    ],
+    [
+      2012,
+      {
+        "grossCeiling": 3031,
+        "netCeiling": 2377,
+        "employerContribution": {
+          "inferiorTo1Ceiling": [0.4165, 0.419],
+          "between1And3Ceilings": [0.0093, 0.4179],
+          "between3And4Ceilings": [0.0763, 0.4179],
+          "above4Ceilings": [0.2333, 0.3615]
+        },
+        "employeeContribution": {
+          "inferiorTo1Ceiling": [0.1372, 0.1385],
+          "between1And3Ceilings": [0.1215, 0.12],
+          "between3And4Ceilings": [0.0325, 0.12],
+          "between4And8Ceilings": [0.0085, 0.0868],
+          "above8Ceilings": [0.0085, 0.0085]
+        }
+      }
+    ]
+  ]
+}

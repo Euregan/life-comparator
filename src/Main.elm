@@ -7,12 +7,13 @@ import Component.Graph as Graph
 import Component.Layout as Layout
 import Component.Salary as Salary
 import Component.Source as Source
-import Component.User as User
 import Data.Chronology as Chronology exposing (Chronology)
+import Data.Cotisation exposing (Cotisation)
 import Data.Gender exposing (Gender(..))
 import Data.MenWomen as MenWomen exposing (MenWomen)
 import Data.Salary as Salary exposing (Salary(..))
 import Data.SocioProfessionalCategories as SocioProfessionalCategories exposing (SocioProfessionalCategories)
+import Data.SocioProfessionalCategory exposing (SocioProfessionalCategory(..))
 import Data.Source exposing (Source)
 import Data.User exposing (User)
 import Dict exposing (Dict)
@@ -41,6 +42,7 @@ type alias Model =
     , sources : List Source
     , salaries : Chronology (MenWomen (SocioProfessionalCategories Salary))
     , inflation : Chronology Float
+    , cotisations : Chronology Cotisation
     }
 
 
@@ -66,6 +68,11 @@ type alias Flags =
         { sources : List Source
         , data : List ( Int, Float )
         }
+    , cotisations :
+        { sources : List Source
+        , data :
+            List ( Int, Cotisation )
+        }
     }
 
 
@@ -75,7 +82,7 @@ init flags =
       , displayOptions =
             { salary = DisplayOptions.NetMonthly
             }
-      , sources = List.concat [ flags.salaries.sources, flags.inflation.sources ]
+      , sources = List.concat [ flags.salaries.sources, flags.inflation.sources, flags.cotisations.sources ]
       , salaries =
             Dict.fromList flags.salaries.data
                 |> Dict.map
@@ -99,6 +106,9 @@ init flags =
             Dict.fromList flags.inflation.data
                 |> Dict.foldr (\year inflation ( inflations, previousInflation ) -> ( Dict.insert year (inflation * previousInflation) inflations, inflation * previousInflation )) ( Dict.empty, 1 )
                 |> Tuple.first
+                |> Chronology.fromDict
+      , cotisations =
+            Dict.fromList flags.cotisations.data
                 |> Chronology.fromDict
       }
     , Cmd.none
@@ -132,6 +142,7 @@ update msg model =
 view : Model -> Browser.Document Msg
 view model =
     let
+        salariesWithInflation : Chronology (Maybe (MenWomen (SocioProfessionalCategories Salary)))
         salariesWithInflation =
             Chronology.merge
                 (Maybe.map2
@@ -150,10 +161,30 @@ view model =
                 model.salaries
                 model.inflation
 
+        salariesWithInflationAndCotisation : Chronology (Maybe ( Cotisation, MenWomen (SocioProfessionalCategories Salary) ))
+        salariesWithInflationAndCotisation =
+            Chronology.merge
+                (Maybe.map2 (\cotisation salary -> ( cotisation, salary )))
+                model.cotisations
+                salariesWithInflation
+                |> Chronology.map
+                    (\_ data ->
+                        case data of
+                            Nothing ->
+                                Nothing
+
+                            Just ( cotisation, Nothing ) ->
+                                Nothing
+
+                            Just ( cotisation, Just salary ) ->
+                                Just ( cotisation, salary )
+                    )
+
+        rawSalariesWithInflation : Chronology (Maybe (MenWomen (SocioProfessionalCategories Float)))
         rawSalariesWithInflation =
             Chronology.map
-                (\_ maybeSalaries -> Maybe.map (MenWomen.map (SocioProfessionalCategories.map (Salary.raw model.displayOptions.salary))) maybeSalaries)
-                salariesWithInflation
+                (\_ maybeData -> Maybe.map (\( cotisation, salary ) -> MenWomen.map (SocioProfessionalCategories.mapWithCategory (Salary.raw model.displayOptions.salary cotisation)) salary) maybeData)
+                salariesWithInflationAndCotisation
     in
     { title = ""
     , body =
@@ -198,20 +229,20 @@ view model =
                         (\( year, maybeData ) ->
                             tr []
                                 [ td [ class "year" ] [ text <| String.fromInt year ]
-                                , td [] [ Maybe.withDefault (text "Donnée manquante") <| Maybe.map (\data -> Salary.withoutKind model.displayOptions.salary data.women.executive) maybeData ]
-                                , td [] [ Maybe.withDefault (text "Donnée manquante") <| Maybe.map (\data -> Salary.withoutKind model.displayOptions.salary data.women.technician) maybeData ]
-                                , td [] [ Maybe.withDefault (text "Donnée manquante") <| Maybe.map (\data -> Salary.withoutKind model.displayOptions.salary data.women.employee) maybeData ]
-                                , td [] [ Maybe.withDefault (text "Donnée manquante") <| Maybe.map (\data -> Salary.withoutKind model.displayOptions.salary data.women.worker) maybeData ]
-                                , td [] [ Maybe.withDefault (text "Donnée manquante") <| Maybe.map (\data -> Salary.withoutKind model.displayOptions.salary data.men.executive) maybeData ]
-                                , td [] [ Maybe.withDefault (text "Donnée manquante") <| Maybe.map (\data -> Salary.withoutKind model.displayOptions.salary data.men.technician) maybeData ]
-                                , td [] [ Maybe.withDefault (text "Donnée manquante") <| Maybe.map (\data -> Salary.withoutKind model.displayOptions.salary data.men.employee) maybeData ]
-                                , td [] [ Maybe.withDefault (text "Donnée manquante") <| Maybe.map (\data -> Salary.withoutKind model.displayOptions.salary data.men.worker) maybeData ]
+                                , td [] [ Maybe.withDefault (text "Donnée manquante") <| Maybe.map (\( cotisation, data ) -> Salary.withoutKind model.displayOptions.salary cotisation Executive data.women.executive) maybeData ]
+                                , td [] [ Maybe.withDefault (text "Donnée manquante") <| Maybe.map (\( cotisation, data ) -> Salary.withoutKind model.displayOptions.salary cotisation Technician data.women.technician) maybeData ]
+                                , td [] [ Maybe.withDefault (text "Donnée manquante") <| Maybe.map (\( cotisation, data ) -> Salary.withoutKind model.displayOptions.salary cotisation Employee data.women.employee) maybeData ]
+                                , td [] [ Maybe.withDefault (text "Donnée manquante") <| Maybe.map (\( cotisation, data ) -> Salary.withoutKind model.displayOptions.salary cotisation Worker data.women.worker) maybeData ]
+                                , td [] [ Maybe.withDefault (text "Donnée manquante") <| Maybe.map (\( cotisation, data ) -> Salary.withoutKind model.displayOptions.salary cotisation Executive data.men.executive) maybeData ]
+                                , td [] [ Maybe.withDefault (text "Donnée manquante") <| Maybe.map (\( cotisation, data ) -> Salary.withoutKind model.displayOptions.salary cotisation Technician data.men.technician) maybeData ]
+                                , td [] [ Maybe.withDefault (text "Donnée manquante") <| Maybe.map (\( cotisation, data ) -> Salary.withoutKind model.displayOptions.salary cotisation Employee data.men.employee) maybeData ]
+                                , td [] [ Maybe.withDefault (text "Donnée manquante") <| Maybe.map (\( cotisation, data ) -> Salary.withoutKind model.displayOptions.salary cotisation Worker data.men.worker) maybeData ]
                                 ]
                         )
                     <|
                         List.reverse <|
                             Chronology.toList <|
-                                salariesWithInflation
+                                salariesWithInflationAndCotisation
                 ]
             , Source.list model.sources
             ]
